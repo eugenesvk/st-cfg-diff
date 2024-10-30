@@ -851,6 +851,10 @@
 	// Goto Anything or Find in Files
 	"binary_file_patterns": ["*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds", "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip"],
 
+	// Files that will be opened as an image rather than a text file. Files can
+	// still be opened as either text or an image vie the File menu
+	"image_file_patterns": ["*.jpeg", "*.jpg", "*.gif", "*.png", "*.ico", "*.bmp", "*.tga", "*.psd", "*.ppm", "*.pgm", "*.webp", "*.hdr"],
+
 	// File indexing parses all files in the sidebar, and builds an index of
 	// their symbols. This is required for Goto Definition to work.
 	"index_files": true,
@@ -874,6 +878,9 @@
 
 	// Determines whether Goto Anything should exclude files ignored by git.
 	"goto_anything_exclude_gitignore": false,
+
+	// Preview file contents in Goto Anything
+	"goto_anything_file_preview": true,
 
 	// When Vintage, the vi emulation package, is enabled
 	// (see ignored_packages, below), this setting controls if files are opened
