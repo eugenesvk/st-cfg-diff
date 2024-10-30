@@ -75,18 +75,18 @@
 // are available:
 // - "constant": Always wrap at exactly the wrap width.
 // - "min": Wrap at the wrap width or less if there is less space available.
-"wrap_width_style"            	: "constant"               	,
-"indent_subsequent_lines"     	: true                     	,// Set to false to prevent word wrapped lines from being indented to the same level
-"draw_centered"               	: false                    	,// Draws text centered in the window rather than left aligned
-"auto_match_enabled"          	: true                     	,// Controls auto pairing of quotes, brackets etc
-"auto_close_tags"             	: true                     	,// Automatically close HTML and XML tags when </ is entered.
-"draw_minimap_border"         	: false                    	,// Set to true to draw a border around the visible rectangle on the minimap. The color of the border will be determined by the "minimap_border" key in the color scheme
-"always_show_minimap_viewport"	: false                    	,// Always visualise the viewport on the minimap, as opposed to only showing it on mouse over
-"minimap_horizontal_scrolling"	: false                    	,// Whether the minimap should scroll horizontally to match the viewport.
-"highlight_line"              	: false                    	,// If enabled, will highlight any line with a caret
-"highlight_gutter"            	: true                     	,// If enabled, will highlight the gutter for any line with a caret
-"highlight_line_number"       	: true                     	,// If enabled, will highlight the line number in the gutter for any line with a caret depending on the color scheme
-"caret_style"                 	: "solid"                  	,// Valid values are "smooth", "phase", "blink" and "solid". Previous versions of Sublime Text used "smooth" by default.
+"wrap_width_style"            	: "constant"    	,
+"indent_subsequent_lines"     	: true          	,// Set to false to prevent word wrapped lines from being indented to the same level
+"draw_centered"               	: false         	,// Draws text centered in the window rather than left aligned
+"auto_match_enabled"          	: true          	,// Controls auto pairing of quotes, brackets etc
+"auto_close_tags"             	: true          	,// Automatically close HTML and XML tags when </ is entered.
+"draw_minimap_border"         	: false         	,// Set to true to draw a border around the visible rectangle on the minimap. The color of the border will be determined by the "minimap_border" key in the color scheme
+"always_show_minimap_viewport"	: false         	,// Always visualise the viewport on the minimap, as opposed to only showing it on mouse over
+"minimap_horizontal_scrolling"	: false         	,// Whether the minimap should scroll horizontally to match the viewport.
+"highlight_line"              	: false         	,// If enabled, will highlight any line with a caret
+"highlight_gutter"            	: true          	,// If enabled, will highlight the gutter for any line with a caret
+"highlight_line_number"       	: true          	,// If enabled, will highlight the line number in the gutter for any line with a caret depending on the color scheme
+"caret_style"                 	: "solid"       	,// Valid values are "smooth", "phase", "blink" and "solid". Previous versions of Sublime Text used "smooth" by default.
 
 "dictionary"       	: "Packages/Language - English/en_US.dic"	,// Word list to use for spell checking. May also be a list of dictionaries.
 //                 	  Sets which scopes are checked for spelling errors
