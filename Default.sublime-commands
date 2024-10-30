@@ -78,8 +78,8 @@
 
 {"caption":"File: Save All"            	,"command":"save_all" },
 {"caption":"File: Revert"              	,"command":"revert" },
-{"caption":"File: Reopen File as Image"	,"command":"force_reopen_as"	,"args":{"type": "image"},  },
-{"caption":"File: Reopen File as Text" 	,"command":"force_reopen_as"	,"args":{"type": "text"},  },
+{"caption":"File: Reopen File as Image"	,"command":"force_reopen_as"	,"args":{"type":"image"	},},
+{"caption":"File: Reopen File as Text" 	,"command":"force_reopen_as"	,"args":{"type":"text" 	},},
 {"caption":"File: New View into File"  	,"command":"clone_file" },
 {"caption":"File: Split View"          	,"command":"clone_file"	,"args":{"add_to_selection": true, "retain_viewport_position": true} },
 {"caption":"File: Close All"           	,"command":"close_all" },
