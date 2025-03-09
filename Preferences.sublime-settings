@@ -19,6 +19,8 @@
 	// in your User File Preferences.
 	"font_face": "",
 	"font_size": 10,
+	// The font size set when using "Reset Size"
+	"default_font_size": 10,
 
 	// Valid options on all platforms are:
 	//  - "no_bold": Disables bold text
