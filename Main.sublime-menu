@@ -360,6 +360,7 @@
 					{ "command": "unselect_others", "caption": "Unselect Others" },
 					{ "command": "unselect_to_left", "caption": "Unselect to Left" },
 					{ "command": "unselect_to_right", "caption": "Unselect to Right" },
+					{ "command": "unselect_current", "caption": "Unselect Current" },
 					{ "caption": "-" },
 					{ "command": "select_to_left", "caption": "Select to Left" },
 					{ "command": "select_to_right", "caption": "Select to Right" },
