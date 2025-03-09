@@ -3,5 +3,6 @@
 	"font_size": 10,
 	"default_font_size": 10,
 	"move_to_limit_on_up_down": true,
-	"mouse_wheel_switches_tabs": true
+	"mouse_wheel_switches_tabs": true,
+	"overlay_scroll_bars": "disabled",
 }
