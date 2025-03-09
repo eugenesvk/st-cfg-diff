@@ -6,6 +6,7 @@
 "dark_color_scheme" 	: "Mariana.sublime-color-scheme" 	, //
 "font_face"         	: ""                             	, // Note that the font_face and font_size are overridden in the platform specific settings file, for example, "Preferences (Linux).sublime-settings". Because of this, setting them here will have no effect: you must set them in your User File Preferences.
 "font_size"         	: 10                             	,
+"default_font_size"  	: 10                             	, // set when using "Reset Size"
 // Valid options on all platforms are:
 //  - "no_bold": Disables bold text
 //  - "no_italic": Disables italic text
