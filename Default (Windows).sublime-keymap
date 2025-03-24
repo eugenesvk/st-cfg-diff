@@ -1,0 +1,313 @@
+[
+	{ "keys": ["ctrl+t"], "command": "new_tab" },
+	{ "keys": ["ctrl+shift+t"], "command": "restore_tab" },
+	{ "keys": ["ctrl+w"], "command": "close_tab" },
+	{ "keys": ["ctrl+f4"], "command": "close_tab" },
+	{ "keys": ["ctrl+tab"], "command": "next_tab" },
+	{ "keys": ["ctrl+shift+tab"], "command": "prev_tab" },
+	{
+		"keys": ["escape"],
+		"command": "exit_file_view",
+		"context":
+		[
+			{ "key": "viewing_file" },
+			{ "key": "blame_mode", "operator": "not_equal" },
+			{ "key": "merge_mode", "operator": "not_equal" },
+		]
+	},
+	{ "keys": ["escape"], "command": "toggle_ref_filter", "context": [ { "key": "control", "operand": "skyline_text_control filter_input locations_filter" }] },
+	{ "keys": ["escape"], "command": "toggle_files_filter", "context": [ { "key": "control", "operand": "skyline_text_control filter_input files_filter" }] },
+	{ "keys": ["escape"], "command": "exit_blame", "context": [{ "key": "blame_mode" }] },
+	{ "keys": ["escape"], "command": "exit_tree_mode", "context": [{ "key": "tree_mode" }] },
+	{ "keys": ["escape"], "command": "exit_search", "context": [{ "key": "search_mode" }] },
+	{ "keys": ["escape"], "command": "hide_command_status", "context": [{ "key": "command_status_visible" }] },
+	{ "keys": ["escape"], "command": "close_preferences", "context": [{ "key": "preferences" }] },
+	{ "keys": ["escape"], "command": "toggle_console", "context": [{ "key": "console_visible" }] },
+	{ "keys": ["escape"], "command": "hide_overlay", "context": [{ "key": "overlay_visible" }] },
+	{ "keys": ["escape"], "command": "hide_auto_complete", "context":
+		[
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
+		]
+	},
+
+	{ "keys": ["ctrl+n"], "command" : "prompt_new_repository" },
+	{ "keys": ["ctrl+o"], "command": "prompt_open_repository" },
+	{ "keys": ["ctrl+shift+o"], "command": "quick_switch_repository" },
+
+	{ "keys": ["ctrl+shift+p"], "command": "show_command_palette" },
+	{ "keys": ["ctrl+p"], "command": "show_command_palette" },
+	{ "keys": ["tab"], "command": "move", "args": {"by": "lines", "forward": true}, "context":
+		[
+		 	{ "key": "command_palette_visible", "operator": "equal", "operand": true  }
+		]
+	},
+	{ "keys": ["shift+tab"], "command": "move", "args": {"by": "lines", "forward": false}, "context":
+		[{ "key": "command_palette_visible", "operator": "equal", "operand": true }]
+	},
+
+	{
+		"keys": ["ctrl+b"],
+		"command": "show_command_palette",
+		"args": {"command": "checkout_branch"}
+	},
+	{
+		"keys": ["ctrl+shift+b"],
+		"command": "show_command_palette",
+		"args": {"command": "create_branch"}
+	},
+	{
+		"keys": ["ctrl+r"],
+		"command": "show_command_palette",
+		"args": {"command": "navigate_to_branch"}
+	},
+
+	{
+		"keys": ["ctrl+f"], "command": "toggle_search",
+		"context": [{"operator": "not_equal", "key": "merge_mode"}]
+	},
+	{
+		"keys": ["ctrl+shift+f"], "command": "toggle_ref_filter",
+		"context": [{"operator": "not_equal", "key": "merge_mode"}]
+	},
+	{
+		"keys": ["ctrl+alt+f"], "command": "toggle_files_filter",
+		"context": [{"operator": "not_equal", "key": "merge_mode"}]
+	},
+
+	{ "keys": ["ctrl+1"], "command": "select_sidebar_tab", "args": {"tab": 1} },
+	{ "keys": ["ctrl+2"], "command": "select_sidebar_tab", "args": {"tab": 2} },
+	{ "keys": ["ctrl+3"], "command": "select_sidebar_tab", "args": {"tab": 3} },
+	{ "keys": ["ctrl+4"], "command": "select_commit_details" },
+
+	{ "keys": ["alt+left"], "command": "navigate_back" },
+	{ "keys": ["alt+right"], "command": "navigate_forward" },
+	{ "keys": ["alt+down"], "command": "navigate_to_parent" },
+	{ "keys": ["alt+shift+down"], "command": "navigate_to_parent", "args": {"parent": 1}, "context": [ { "key": "control", "operand": "commit_table" }] },
+	{ "keys": ["alt+up"], "command": "navigate_to_child" },
+	{ "keys": ["ctrl+0"], "command": "navigate_to_head" },
+	{ "keys": ["ctrl+9"], "command": "navigate_to_commit_message" },
+
+	{ "keys": ["ctrl+8"], "command": "toggle_focus_ref", "args": {"ref": "refs/heads/$head"}},
+
+	{ "keys": ["ctrl+;"], "command": "show_commit_message_history" },
+
+	{ "keys": ["left"], "command": "collapse_merge", "context": [ { "key": "control", "operand": "commit_table" }, {"key": "search_mode", "operator": "not_equal"} ] },
+	{ "keys": ["right"], "command": "expand_merge", "context": [ { "key": "control", "operand": "commit_table" }, {"key": "search_mode", "operator": "not_equal"} ] },
+
+	{ "keys": ["ctrl+1"], "command": "focus_left", "context": [{"key": "merge_mode"}] },
+	{ "keys": ["ctrl+2"], "command": "focus_middle", "context": [{"key": "merge_mode"}] },
+	{ "keys": ["ctrl+3"], "command": "focus_right", "context": [{"key": "merge_mode"}] },
+	{ "keys": ["ctrl+0"], "command": "toggle_merged_vs_base", "context": [{"key": "merge_mode"}] },
+
+	{ "keys": ["f5"], "command": "refresh" },
+	{ "keys": ["ctrl+shift+h"], "command": "refresh" },
+
+	{
+		"keys": ["enter"],
+		"command": "clone",
+		"context":
+		[
+			{"key": "clone_page"}
+		],
+	},
+	{
+		"keys": ["enter"],
+		"command": "merge_branch",
+		"args": {"branch": "$branch", "options": "$options"},
+		"context":
+		[
+			{"key": "merge_helper"}
+		],
+	},
+
+	{
+		"keys": ["ctrl+i"],
+		"command": "toggle_image_diff_style",
+	},
+	{ "keys": ["left"], "command": "adjust_slider", "args": { "forward": false }, "context": [{ "key": "control", "operand": "onion_skin_slider" }] },
+	{ "keys": ["right"], "command": "adjust_slider", "args": { "forward": true }, "context": [{ "key": "control", "operand": "onion_skin_slider" }] },
+	{ "keys": ["home"], "command": "adjust_slider", "args": { "forward": false, "jump_to_end": true }, "context": [{ "key": "control", "operand": "onion_skin_slider" }] },
+	{ "keys": ["end"], "command": "adjust_slider", "args": { "forward": true, "jump_to_end": true }, "context": [{ "key": "control", "operand": "onion_skin_slider" }] },
+
+	{
+		"keys": ["enter"],
+		"command": "stage_hunk",
+		"context": [{"key": "is_staged", "operand": false }, {"key": "is_diff"}],
+	},
+	{
+		"keys": ["enter"],
+		"command": "unstage_hunk",
+		"context": [{"key": "is_staged"}, {"key": "is_diff"}],
+	},
+	{
+		"keys": ["backspace"],
+		"command": "discard_hunk",
+		"context": [{"key": "is_diff"}],
+	},
+	{
+		"keys": ["enter"],
+		"command": "stage_file",
+		"args": {"path":"$path"},
+		"context":
+		[
+			{"key": "is_staged", "operand": false },
+			{ "key": "control", "operand": "table_of_contents table_of_contents_tree" }
+		],
+	},
+	{
+		"keys": ["enter"],
+		"command": "unstage_file",
+		"args": {"path":"$path"},
+		"context":
+		[
+			{"key": "is_staged", "operand": true },
+			{ "key": "control", "operand": "table_of_contents table_of_contents_tree" }
+		],
+	},
+	{
+		"keys": ["enter"],
+		"command": "stage_file",
+		"args": {"path":"$path"},
+		"context":
+		[
+			{ "key": "is_submodule" },
+			{ "key": "is_staged", "operand": false },
+		],
+	},
+	{
+		"keys": ["enter"],
+		"command": "unstage_file",
+		"args": {"path":"$path"},
+		"context":
+		[
+			{ "key": "is_submodule" },
+			{ "key": "is_staged", "operand": true },
+		],
+	},
+	{
+		"keys": ["backspace"],
+		"command": "discard_file",
+		"args": {"path":"$path"},
+		"context": [{"key": "is_staged", "operand": false }, { "key": "control", "operand": "table_of_contents table_of_contents_tree" }],
+	},
+	{
+		"keys": ["shift+enter"],
+		"command": "stage_file",
+		"args": {"path": "$path"},
+		"context": [{"key": "is_staged", "operand": false }, {"key": "is_diff"}],
+	},
+	{
+		"keys": ["shift+enter"],
+		"command": "unstage_file",
+		"args": {"path": "$path"},
+		"context": [{"key": "is_staged", "operand": true }, {"key": "is_diff"}],
+	},
+	{
+		"keys": ["shift+backspace"],
+		"command": "discard_file",
+		"args": {"path": "$path"},
+		"context": [{"key": "is_staged", "operand": false }, {"key": "is_diff"}],
+	},
+	{
+		"keys": ["backspace"],
+		"command": "left_delete",
+		"context":
+		[
+			{ "key": "control", "operand": "text_control" },
+			{ "key": "is_diff", "operand": false },
+		]
+	},
+
+	{ "keys": ["ctrl+pageup"], "command": "prev_file_tab" },
+	{ "keys": ["ctrl+pagedown"], "command": "next_file_tab" },
+
+	// Use an empty command, so space sends a character event as normal when a
+	// text control (i.e., the find box) has input focus
+	{
+		"keys": [" "],
+		"command": "",
+		"context": [ { "key": "control", "operand": "text_control" } ]
+	},
+	{
+		"keys": [" "],
+		"command": "toggle_collapsed",
+		"context": [ { "key": "collapsible" } ],
+	},
+	{
+		"keys": ["shift+f11"],
+		"command": "toggle_full_context",
+		"context": [ { "key": "control", "operand": "file_diff_hunk_container" } ],
+	},
+	{
+		"keys": [" "],
+		"command": "toggle_selected",
+		"context": [ { "key": "control", "operand": "checkbox_control" } ]
+	},
+
+	{
+		"keys": ["ctrl+enter"],
+		"command": "open_in_editor",
+		"args": { "path": "$working_dir/$path", "line": "$line", "col": "$col" },
+		"context": [{"key": "is_diff"}],
+	},
+	{
+		"keys": ["ctrl+enter"],
+		"command": "open_in_editor",
+		"args": { "path": "$working_dir/$path", "line": "$line", "col": "$col" },
+		"context": [{"key": "is_blame"}],
+	},
+	{ "keys": ["ctrl+enter"], "command": "commit", "args": { "mode": "commit" },
+		"context": [{ "key": "setting.commit_message" }, { "key": "can_commit" }]
+	},
+	{ "keys": ["ctrl+enter"], "command": "edit_commit",
+		"context": [{ "key": "setting.commit_message" }, { "key": "read_only" }]
+	},
+	{ "keys": ["ctrl+enter"], "command": "save_commit_message",
+		"context": [{ "key": "setting.commit_message" }, { "key": "is_editing_commit" }]
+	},
+	{ "keys": ["escape"], "command": "cancel_edit_commit_message",
+		"context": [{ "key": "setting.commit_message" }, { "key": "is_editing_commit" }]
+	},
+
+	{ "keys": ["alt+q"], "command": "wrap_lines" },
+
+	{
+		"keys": ["shift+f8"],
+		"command": "show_command_palette",
+		"args": {"command": "push", "args": {"prompt": true} },
+	},
+	{
+		"keys": ["ctrl+alt+up"],
+		"command": "show_command_palette",
+		"args": {"command": "push"}
+	},
+	{
+		"keys": ["f8"],
+		"command": "show_command_palette",
+		"args": {"command": "push"}
+	},
+
+	{
+		"keys": ["shift+f7"],
+		"command": "show_command_palette",
+		"args": {"command": "pull" },
+	},
+	{ "keys": ["ctrl+alt+down"], "command": "pull" },
+	{ "keys": ["f7"], "command": "pull" },
+
+	{ "keys": ["ctrl+s"], "command": "stash" },
+	{ "keys": ["ctrl+shift+s"], "command": "pop_stash" },
+	{ "keys": ["ctrl+shift+a"], "command": "stage_all_modified" },
+	{ "keys": ["ctrl+k", "ctrl+a"], "command": "stage_all" },
+	{ "keys": ["ctrl+shift+r"], "command": "unstage_all" },
+
+	{ "keys": ["ctrl+shift+s"], "command": "save", "context": [{"key": "merge_mode"}] },
+	{ "keys": ["ctrl+s"], "command": "save", "context": [{"key": "merge_mode"}] },
+	{ "keys": ["ctrl+shift+["], "command": "use_left_hunk" },
+	{ "keys": ["ctrl+shift+]"], "command": "use_right_hunk" },
+	{ "keys": ["ctrl+n"], "command": "next_conflict", "context": [{"key": "merge_mode"}] },
+	{ "keys": ["ctrl+shift+n"], "command": "prev_conflict", "context": [{"key": "merge_mode"}] },
+
+	{ "keys": ["ctrl+k", "ctrl+b"], "command": "toggle_side_bar" },
+	{ "keys": ["ctrl+`"], "command": "toggle_console"},
+]

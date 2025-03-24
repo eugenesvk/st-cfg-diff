@@ -1,0 +1,17 @@
+{
+	"theme": "Merge.sublime-theme",
+	"light_theme": "Merge.sublime-theme",
+	"dark_theme": "Merge Dark.sublime-theme",
+	"light_color_scheme": null,
+	"dark_color_scheme": null,
+	"themed_title_bar": true,
+	"caret_style": "smooth",
+	"caret_extra_top": 2,
+	"caret_extra_bottom": 2,
+	"show_tab_close_buttons": true,
+	"side_bar_layout": "locations_as_column",
+	"expand_untracked_files_by_default": false,
+	"auto_fetch_delay": 0,
+	"commit_graph_ordering": "commit_date",
+	"diff_algorithm": "match_git"
+}

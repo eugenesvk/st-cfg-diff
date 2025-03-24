@@ -1,0 +1,6 @@
+[
+    { "button": "button4", "modifiers": [], "command": "navigate_back" },
+    { "button": "button5", "modifiers": [], "command": "navigate_forward" },
+    { "button": "button8", "modifiers": [], "command": "navigate_back" },
+    { "button": "button9", "modifiers": [], "command": "navigate_forward" },
+]
