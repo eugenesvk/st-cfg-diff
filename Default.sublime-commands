@@ -52,22 +52,12 @@
 {"caption":"Preferences: Settings – Syntax Specific" 	,"command":"edit_syntax_settings" },
 {"caption":"Preferences: Settings – Distraction Free"	,"command": "edit_settings", "args":
   {"base_file": "${packages}/Default/Distraction Free.sublime-settings","default": "{\n\t$0\n}\n"}},
-{
-	"caption":"Preferences: Key Bindings",
-	"command": "edit_settings", "args":
-	{
-		"base_file": "${packages}/Default/Default ($platform).sublime-keymap",
-		"default": "[\n\t$0\n]\n"
-	}
-},
-{
-	"caption":"Preferences: Mouse Bindings",
-	"command": "edit_settings", "args":
-	{
-		"base_file": "${packages}/Default/Default ($platform).sublime-mousemap",
-		"default": "[\n\t$0\n]\n"
-	}
-},
+{"caption":"Preferences: Key Bindings","command":"edit_settings","args":
+{"base_file":"${packages}/Default/Default ($platform).sublime-keymap",
+ "default"  :"[\n\t$0\n]\n"}},
+{"caption":"Preferences: Mouse Bindings","command":"edit_settings","args":
+{"base_file":"${packages}/Default/Default ($platform).sublime-mousemap",
+ "default"  :"[\n\t$0\n]\n"}},
 
 {"caption":"Install Package Control"	,"command":"install_package_control" },
 
