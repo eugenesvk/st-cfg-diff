@@ -897,8 +897,7 @@
     "layer0.tint":"var(light_bg)",},
 // Scroll Bars (Overlay)
   {"class":"scroll_bar_control","parents":[{"class":"overlay_control"}],
-    "layer0.opacity":0.0,
-    "content_margin":[4,0,0,0]},
+    "layer0.opacity":0.0,"content_margin":[4,0,0,0]},
 // Inputs
   {"class":"text_line_control","layer0.texture":"Theme - Default/common/input.png",
     "layer0.opacity":1.0,
@@ -911,15 +910,10 @@
   {"class":"text_line_control","parents":[{"class":"switch_project_window"}],
     "font.face":"system",
     "font.size":"var(font_size_lg)"},
-  {"class":"text_area_control","settings":{
-      "inactive_sheet_dimming": true,
-    },
-    "attributes":["!highlighted"],
-    "parents":[{"class":"text_line_control"}],
+  {"class":"text_area_control","settings":{"inactive_sheet_dimming":true,},
+    "attributes":["!highlighted"],"parents":[{"class":"text_line_control"}],
     "background_modifier":"var(text_widget_dark_modifier)",},
-  {"class":"text_area_control","settings":{
-      "inactive_sheet_dimming": true,
-    },
+  {"class":"text_area_control","settings":{"inactive_sheet_dimming":true,},
     "attributes":["file_light","!highlighted"],
     "parents":[{"class":"text_line_control"}],
     "background_modifier":"var(text_widget_light_modifier)",},
