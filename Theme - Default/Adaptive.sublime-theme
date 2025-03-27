@@ -191,13 +191,11 @@
   {"class":"sidebar_label","parents":[{"class":"tree_row","attributes":["selected"]}],
     "fg":"white",},
   {"class":"sidebar_label","parents":[
-      {"class":"window","attributes":["file_light"]},
-      {"class":"tree_row","attributes":["selected"]}
-    ],
+      {"class":"window"  ,"attributes":["file_light"]},
+      {"class":"tree_row","attributes":["selected"  ]}],
     "fg":"black",},
   {"class":"sidebar_label","parents":[{"class":"tree_row","attributes":["expandable"]}],
-    "settings":["bold_folder_labels"],
-    "font.bold": true},
+    "settings":["bold_folder_labels"],"font.bold":true},
 
 // Open Files Icons
   {"class":"close_button","layer0.texture":"Theme - Default/common/open_file_close.png",
