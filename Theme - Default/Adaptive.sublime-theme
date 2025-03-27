@@ -367,7 +367,7 @@
   {"class":"tab_control","attributes":["dirty", "selected"	],"settings":["highlight_modified_tabs"],
     "layer2.opacity":1.0                                  	},
   {"class":"tab_control","attributes":["dirty","!selected"	],"settings":{"highlight_modified_tabs":true},
-    "layer2.texture":"Theme - Default/common/tab_square_pinstripe.png",
+    "layer2.texture":"Theme - Default/common/tab_square_highlight.png",
     "layer2.inner_margin":[0,0,0,0],},
   {"class":"tab_control","attributes":["added"  ],"layer2.tint":"var(--greenish)",},
   {"class":"tab_control","attributes":["deleted"],"layer2.tint":"var(--redish  )",},
