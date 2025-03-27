@@ -108,7 +108,7 @@
   "checkbox-disabled"         	:"#a6a6a6",
 },
 "rules":[
-  // Title Bar
+// Title Bar
   {"class":"title_bar","settings":["themed_title_bar"],
     "fg":"color(var(--background) blend(white 30%))",
     "style":"system"},
@@ -130,7 +130,7 @@
     "fg":"color(var(--background) blend(black 30%))",
     "style":"light"},
 
-  // Side Bar
+// Side Bar
   {"class":"sidebar_container","layer0.opacity":1.0,
     "content_margin":0,},
   {"class":"sidebar_container","parents":[{"class":"window","attributes":["file_dark"]}],
@@ -198,7 +198,7 @@
     "settings":["bold_folder_labels"],
     "font.bold": true},
 
-  // Open Files Icons
+// Open Files Icons
   {"class":"close_button","layer0.texture":"Theme - Default/common/open_file_close.png",
     "layer0.opacity":{"target":0.7,"speed":4.0,"interpolation":"smoothstep" },
     "layer0.tint":"color(white a(50%))",
@@ -214,7 +214,7 @@
   {"class":"close_button","attributes":["deleted"],
     "layer0.tint":"var(vcs_deleted)",},
 
-  // Folder & File Icons
+// Folder & File Icons
   {"class":"disclosure_button_control","layer0.texture":"Theme - Default/common/disclosure_unexpanded.png",
     "layer0.tint":"white",
     "layer0.opacity":{"target":0.3,"speed":4.0,"interpolation":"smoothstep" },
@@ -283,7 +283,7 @@
     "layer0.tint":"black",
     "layer0.opacity":0.4,},
 
-  // VCS badges
+// VCS badges
   {"class":"file_system_entry","content_margin":[0,0,8,0]},
   {"class":"file_system_entry","parents":[{"class":"scroll_area_control","attributes":["scrollable"]}],
     "settings":["!overlay_scroll_bars"],
@@ -336,7 +336,7 @@
     ],
     "color":"color(var(--background) blend(black 50%))"},
 
-  // Tabset
+// Tabset
   {"class":"tabset_control","layer0.opacity":1.0,
     "content_margin":[0,0,0,0],
     "tab_height":34,},
@@ -358,7 +358,7 @@
   {"class":"tab_connector","layer0.texture":"",
     "layer0.opacity":1.0,
     "tint_index":0,},
-  // Tabs
+// Tabs
   {"class":"tab_control","settings":{"file_tab_style":"square"},
     "layer0.opacity":1.0,
     "layer1.opacity":1.0,
@@ -372,8 +372,8 @@
     "accent_tint_index":2,
     "content_margin":[14,3,9,4],
     "hit_test_level":0.3},
-  // Tabs - background
-  // These rules prevent the opacity of un-highlighted sheets from stacking, which results in the rounded corners being dark
+// Tabs - background
+// These rules prevent the opacity of un-highlighted sheets from stacking, which results in the rounded corners being dark
   {"class":"tab_control","parents":[{"class":"edit_window","attributes":["file_dark"]}],
     "layer0.tint":"var(tabset_dark_bg)",},
   {"class":"tab_control","parents":[{"class":"edit_window","attributes":["file_medium_dark"]}],
@@ -386,7 +386,7 @@
   {"class":"tab_control","attributes":["!selected"                     	],"layer1.opacity":0.0,},
   {"class":"tab_control","attributes":["!selected","hover"             	],"layer1.opacity":0.7,},
   {"class":"tab_control","attributes":["!selected","hover","file_light"	],"layer1.opacity":0.7,},
-  // Tabs - modified highlight
+// Tabs - modified highlight
   {"class":"tab_control","attributes":["dirty"            	],"settings":{"highlight_modified_tabs":true},
     "layer2.opacity":0.8                                  	},
   {"class":"tab_control","attributes":["dirty", "selected"	],"settings":["highlight_modified_tabs"],
@@ -396,7 +396,7 @@
     "layer2.inner_margin":[0,0,0,0],},
   {"class":"tab_control","attributes":["added"  ],"layer2.tint":"var(--greenish)",},
   {"class":"tab_control","attributes":["deleted"],"layer2.tint":"var(--redish  )",},
-  // Tabs - dividers
+// Tabs - dividers
   {"class":"tab_control","parents":[{"class":"edit_window","attributes":["file_light"]}],
     "layer3.tint":"var(file_tab_unselected_light_label_color)",},
   {"class":"tab_control","settings":{"file_tab_style":"square"},
@@ -424,8 +424,8 @@
   {"class":"tab_control","settings":{"file_tab_style":"square"},
     "attributes":["!highlighted","!selected","!hover","!left_of_selected","!right_of_selected","!left_of_hover","!right_of_hover"],
     "layer3.opacity":0.3,},
-  // Tabs - border
-  // Tabs - label
+// Tabs - border
+// Tabs - label
   {"class":"tab_label","font.face":"var(font_face)",
     "font.size":"var(font_size_sm)",},
   {"class":"tab_label","attributes":["transient"],
@@ -438,8 +438,7 @@
     "opacity":0.7},
   {"class":"tab_label","parents":[{"class":"tab_control","attributes":["!selected","hover"]}],
     "opacity":1.0},
-  // Ensure unselected tabs use the correct text color based on what
-  // background is being shown
+// Ensure unselected tabs use the correct text color based on what background is being shown
   {"class":"tab_label","parents":[
       {"class":"tab_control","attributes":["!selected"]}
     ],
@@ -461,7 +460,7 @@
     "fg":"var(file_tab_selected_label_color)"},
   {"class":"tab_label","parents":[{"class":"tab_control","attributes":["selected","file_light"]}],
     "fg":"var(file_tab_selected_light_label_color)"},
-  // Tabs - close button
+// Tabs - close button
   {"class":"tab_control","settings":["show_tab_close_buttons_on_left"],
     "close_button_side":"left",
     "content_margin":[22,8,26,4],},
@@ -490,24 +489,12 @@
     "layer0.tint":"var(vcs_added)",},
   {"class":"tab_close_button","parents":[{"class":"tab_control","attributes":["deleted"]}],
     "layer0.tint":"var(vcs_deleted)",},
-  // {
-  //  "class":"tab_close_button",
-  //  "settings": {"file_tab_style":["","square"]},
-  //  "parents":[
-  //    {"class":"tab_control","attributes":["!selected","!hover"]}
-  //  ],
-  //  "layer0.tint":"white"
-  // },
-  // {
-  //  "class":"tab_close_button",
-  //  "settings": {"file_tab_style":["","square"]},
-  //  "parents":[
-  //    {"class":"edit_window","attributes":["file_light"]},
-  //    {"class":"tab_control","attributes":["!selected","!hover"]}
-  //  ],
-  //  "layer0.tint":"black"
-  // },
-  // Tab scrolling
+  //{"class":"tab_close_button","parents":[{"class":"tab_control","attributes":["!selected","!hover"]}],
+  // "layer0.tint":"white"},
+  //{"class":"tab_close_button","parents":[{"class":"edit_window","attributes":["file_light"]},
+  //  {"class":"tab_control","attributes":["!selected","!hover"]}],
+  // "layer0.tint":"black"},
+// Tab scrolling
   {"class":"scroll_tabs_left_button","layer0.texture":"Theme - Default/common/tab_scroll_left.png",
     "layer0.opacity":"var(tabset_button_opacity)",
     "layer0.tint":"white",
@@ -523,9 +510,7 @@
     "layer0.opacity":"var(tabset_button_opacity)",
     "layer0.tint":"white",
     "layer0.inner_margin":[13,0,1,0],
-    // Reduces the right padding on the button due to accomodate for
-    // tab overlap
-    "content_margin":[11,12,5,12],},
+    "content_margin":[11,12,5,12],}, // Reduces the right padding on the button due to accomodate for tab overlap
   {"class":"scroll_tabs_right_button","settings":["hide_tab_scrolling_buttons"],
     "content_margin":0},
   {"class":"scroll_tabs_right_button","parents":[{"class":"edit_window","attributes":["file_light"]}],
@@ -557,7 +542,7 @@
   {"class":"show_tabs_dropdown_button","attributes":["hover"],
     "layer0.opacity":"var(tabset_button_hover_opacity)"},
 
-  // Sheets
+// Sheets
   {"class":"sheet_contents","background_modifier":""},
   {"class":"sheet_contents","settings":{"inactive_sheet_dimming":true,},
     "attributes":["file_dark","!highlighted"],
@@ -572,7 +557,7 @@
     "attributes":["file_light","!highlighted"],
     "background_modifier":"var(sheet_light_modifier)"},
 
-  // Quick Panel
+// Quick Panel
   {"class":"overlay_control","layer0.tint":"color(var(--background) blend(black 60%))",
     "layer0.opacity":1.0,
     "content_margin":4},
@@ -646,7 +631,7 @@
     "selected_fg":"color(var(--background) blend(black 20%) a(0.8))",},
   {"class":"quick_panel_label key_binding","font.size":"var(font_size_sm)",},
 
-  // Views
+// Views
   {"class":"grid_layout_control","border_color":"var(--background)",
     "border_size":2},
   {"class":"grid_layout_control","parents":[{"class":"window","attributes":["file_dark"]}],
@@ -869,7 +854,7 @@
     ],
     "monospace_background_color":"var(auto_complete_detail_panel_mono_light_bg)",},
 
-  // Panels
+// Panels
   {"class":"panel_control","layer0.tint":"color(var(--background) blend(black 50%))",
     "layer0.opacity":1.0,
     "content_margin":2},
@@ -922,7 +907,7 @@
   {"class":"panel_close_button","attributes":["hover"],
     "layer0.opacity":{"target":0.6,"speed":4.0,"interpolation":"smoothstep" },},
 
-  // Dialogs
+// Dialogs
   {"class":"dialog","layer0.opacity":1.0},
   {"class":"dialog","attributes":["file_dark"],
     "layer0.tint":"var(dark_bg)",},
@@ -944,7 +929,7 @@
     "layer0.tint":"color(black a(0.2))",
     "layer0.opacity":1.0},
 
-  // Scroll Bars
+// Scroll Bars
   {"class":"scroll_area_control","settings":["overlay_scroll_bars"],
     "overlay": true},
   {"class":"scroll_area_control","settings":["!overlay_scroll_bars"],
@@ -979,19 +964,19 @@
     "layer0.tint":"white",},
   {"class":"scroll_corner_control","layer0.opacity":1.0,
     "tint_index":0},
-  // Scroll Bars (Horizontal)
+// Scroll Bars (Horizontal)
   {"class":"scroll_track_control","attributes":["horizontal"],
     "layer0.texture":"Theme - Default/common/scroll_horiz.png",
     "content_margin":[4,4,4,3]},
   {"class":"puck_control","attributes":["horizontal"],
     "layer0.texture":"Theme - Default/common/scroll_horiz.png",
     "content_margin":[12,0]},
-  // Scroll Bars (Sidebar)
+// Scroll Bars (Sidebar)
   {"class":"scroll_bar_control","parents":[{"class":"sidebar_container"}],
     "layer0.opacity":0.0,},
   {"class":"scroll_corner_control","parents":[{"class":"sidebar_container"}],
     "layer0.opacity":0.0,},
-  // Scroll Bars (Switch Project)
+// Scroll Bars (Switch Project)
   {"class":"scroll_bar_control","parents":[{"class":"switch_project_window"}],
     "tint_index": -1},
   {"class":"scroll_bar_control","parents":[{"class":"switch_project_window","attributes":["file_dark"]}],
@@ -1002,11 +987,11 @@
     "layer0.tint":"var(medium_bg)",},
   {"class":"scroll_bar_control","parents":[{"class":"switch_project_window","attributes":["file_light"]}],
     "layer0.tint":"var(light_bg)",},
-  // Scroll Bars (Overlay)
+// Scroll Bars (Overlay)
   {"class":"scroll_bar_control","parents":[{"class":"overlay_control"}],
     "layer0.opacity":0.0,
     "content_margin":[4,0,0,0]},
-  // Inputs
+// Inputs
   {"class":"text_line_control","layer0.texture":"Theme - Default/common/input.png",
     "layer0.opacity":1.0,
     "layer0.inner_margin":4,
@@ -1039,7 +1024,7 @@
   {"class":"dropdown_button_control","attributes":["hover"],
     "layer0.opacity":{"target":0.5,"speed":4.0,"interpolation":"smoothstep" },},
 
-  // Buttons
+// Buttons
   {"class":"button_control","layer0.texture":"Theme - Default/common/button.png",
     "layer0.opacity":{"target":0.15,"speed":4.0,"interpolation":"smoothstep" },
     "layer0.inner_margin":4,
@@ -1206,7 +1191,7 @@
     "layer0.tint":["accent",1.0],
     "layer0.opacity":1.0,},
 
-  // Labels
+// Labels
   {"class":"label_control","fg":"color(var(--background) blend(white 10%))",
     "font.face":"var(font_face)",
     "font.size":"var(font_size)"},
@@ -1226,10 +1211,10 @@
   {"class":"label_control","parents":[{"class":"button_control","attributes":["disabled"]}],
     "opacity":0.7,},
 
-  // Link Labels
+// Link Labels
   {"class":"link_label","fg":"color(var(--background) blend(var(link_fg) 10%))",},
 
-  // Tool tips
+// Tool tips
   {"class":"tool_tip_control","layer0.tint":"var(tool_tip_bg)",
     "layer0.opacity":1.0,
     "content_margin":[8,3,8,3]},
@@ -1237,7 +1222,7 @@
     "font.size":"var(font_size_sm)",
     "fg":"var(tool_tip_fg)"},
 
-  // Status Bar
+// Status Bar
   {"class":"status_bar","layer0.tint":"color(var(--background) blend(black 50%))",
     "layer0.opacity":1.0,
     "layer1.texture":"Theme - Default/common/footer_divider.png",
@@ -1298,7 +1283,7 @@
     "color":"color(var(--background) blend(black 40%))",
     "border_color":"color(var(--background) blend(black 60%))",},
 
-  // Checkboxes
+// Checkboxes
   {"class":"checkbox_box_control","content_margin":[13,13,0,0],
     "layer0.texture":"Theme - Default/common/checkbox_back.png",
     "layer0.tint":"var(checkbox_back)",
@@ -1317,7 +1302,7 @@
     "layer2.tint":"var(checkbox-disabled)",
     "layer2.opacity":1,},
 
-  // Radio Buttons
+// Radio Buttons
   {"class":"radio_button_list_control","spacing":4},
   {"class":"checkbox_box_control","parents":[{"class":"radio_button_list_control"}, {"class":"checkbox_control"}],
     "content_margin":[13,13,0,0],
