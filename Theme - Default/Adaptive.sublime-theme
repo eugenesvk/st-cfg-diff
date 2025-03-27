@@ -406,22 +406,15 @@
   {"class":"tab_label","parents":[{"class":"tab_control","attributes":["!selected","hover"]}],
     "opacity":1.0},
 // Ensure unselected tabs use the correct text color based on what background is being shown
-  {"class":"tab_label","parents":[
-      {"class":"tab_control","attributes":["!selected"]}
-    ],
+  {"class":"tab_label","parents":[{"class":"tab_control","attributes":["!selected"]}],
     "fg":"var(file_tab_unselected_label_color)"},
   {"class":"tab_label","parents":[
       {"class":"edit_window","attributes":["file_light"]},
-      {"class":"tab_control","attributes":["!selected","!hover"]}
-    ],
+      {"class":"tab_control","attributes":["!selected","!hover"]}],
     "fg":"var(file_tab_unselected_light_label_color)"},
-  {"class":"tab_label","parents":[
-      {"class":"tab_control","attributes":["!selected","hover"]}
-    ],
+  {"class":"tab_label","parents":[{"class":"tab_control","attributes":["!selected","hover"]}],
     "fg":"var(file_tab_selected_label_color)"},
-  {"class":"tab_label","parents":[
-      {"class":"tab_control","attributes":["!selected","hover","file_light"]}
-    ],
+  {"class":"tab_label","parents":[{"class":"tab_control","attributes":["!selected","hover","file_light"]}],
     "fg":"var(file_tab_selected_light_label_color)"},
   {"class":"tab_label","parents":[{"class":"tab_control","attributes":["selected"]}],
     "fg":"var(file_tab_selected_label_color)"},
