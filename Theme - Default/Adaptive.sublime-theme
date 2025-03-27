@@ -6,6 +6,7 @@
   "font_face_tab"  	:"system",
   "font_size_tab"  	: 16,
   "font_size_lg"   	: 13,
+  "font_size_side" 	: 16,
   "font_size_title"	: 24,
 
   "dark_bg"       	:"color(var(--background) blend(white 85%))",
@@ -173,7 +174,7 @@
     "layer0.opacity":1.0,},
   {"class":"sidebar_heading","fg":"color(var(--background) blend(white 45%))",
     "font.face":"var(font_face)",
-    "font.size":"var(font_size_lg)",
+    "font.size":"var(font_size_side)",
     "font.bold": true,
     "shadow_color":"color(black a(0.1))",
     "shadow_offset":[0,1]},
