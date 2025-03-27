@@ -843,7 +843,7 @@
   {"class":"scroll_area_control","settings":[ "overlay_scroll_bars"],"overlay": true },
   {"class":"scroll_area_control","settings":["!overlay_scroll_bars"],"overlay": false},
   {"class":"scroll_area_control","parents":[{"class":"sidebar_container"}],
-    "content_margin":[0,10,0,10]},
+    "content_margin":[0,0,0,0]},
   {"class":"scroll_bar_control","layer0.opacity":1.0,
     "content_margin":4,"tint_index":0},
   {"class":"scroll_bar_control","settings":[ "overlay_scroll_bars"],"layer0.opacity":0.0},
