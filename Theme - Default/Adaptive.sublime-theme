@@ -810,7 +810,7 @@
   {"class":"panel_close_button","layer0.texture":"Theme - Default/common/panel_close.png",
     "layer0.tint":"white",
     "layer0.opacity":0.4,
-    "content_margin":8},
+    "content_margin":0},
   {"class":"panel_close_button","parents":[{"class":"window","attributes":["file_light"]}],
     "layer0.tint":"color(var(--background) blend(black 20%))"},
   {"class":"panel_close_button","attributes":["hover"],
