@@ -3,6 +3,8 @@
   "font_face"      	:"system",
   "font_size_sm"   	: 11,
   "font_size"      	: 12,
+  "font_face_tab"  	:"system",
+  "font_size_tab"  	: 16,
   "font_size_lg"   	: 13,
   "font_size_title"	: 24,
 
@@ -423,8 +425,7 @@
     "layer3.opacity":0.3,},
 // Tabs - border
 // Tabs - label
-  {"class":"tab_label","font.face":"var(font_face)",
-    "font.size":"var(font_size_sm)",},
+  {"class":"tab_label","font.face":"var(font_face_tab)","font.size":"var(font_size_tab)",},
   {"class":"tab_label","attributes":["transient"],
     "font.italic": true},
   {"class":"tab_label","fg":"var(file_tab_selected_label_color)",
