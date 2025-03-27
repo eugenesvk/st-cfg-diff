@@ -892,6 +892,9 @@
 // Scroll Bars (Overlay)
   {"class":"scroll_bar_control","parents":[{"class":"overlay_control"}],
     "layer0.opacity":0.0,"content_margin":[4,0,0,0]},
+  {"class":"puck_control","parents":[{"class":"overlay_control"}],
+    "layer0.tint":"transparent","layer0.opacity":0.0,},
+
 // Inputs
   {"class":"text_line_control","layer0.texture":"Theme - Default/common/input.png",
     "layer0.opacity":1.0,
