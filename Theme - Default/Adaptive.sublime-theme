@@ -840,10 +840,8 @@
     "layer0.opacity":1.0},
 
 // Scroll Bars
-  {"class":"scroll_area_control","settings":["overlay_scroll_bars"],
-    "overlay": true},
-  {"class":"scroll_area_control","settings":["!overlay_scroll_bars"],
-    "overlay": false},
+  {"class":"scroll_area_control","settings":[ "overlay_scroll_bars"],"overlay": true },
+  {"class":"scroll_area_control","settings":["!overlay_scroll_bars"],"overlay": false},
   {"class":"scroll_area_control","parents":[{"class":"sidebar_container"}],
     "content_margin":[0,10,0,10]},
   {"class":"scroll_bar_control","layer0.opacity":1.0,
