@@ -364,7 +364,7 @@
     "tint_index":1,
     "tint_modifier":"transparent",
     "accent_tint_index":2,
-    "content_margin":[14,3,9,4],
+    "content_margin":[3,0,3,0],
     "hit_test_level":0.3},
 // Tabs - background
 // These rules prevent the opacity of un-highlighted sheets from stacking, which results in the rounded corners being dark
