@@ -260,7 +260,7 @@
     "layer0.tint":"black","layer0.opacity":0.4,},
 
 // VCS badges
-  {"class":"file_system_entry","content_margin":[0,0,8,0]},
+  {"class":"file_system_entry","content_margin":[0,0,0,0]},
   {"class":"file_system_entry","parents":[{"class":"scroll_area_control","attributes":["scrollable"]}],"settings":["!overlay_scroll_bars"],
     "content_margin":[0,0,0,0]},
   {"class":"vcs_status_badge","content_margin":6},
