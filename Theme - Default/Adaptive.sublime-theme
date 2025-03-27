@@ -48,9 +48,9 @@
   "file_tab_selected_light_tint"      	:"color(var(tabset_light_tint_mod) a(- 70%))",
 
   "file_tab_unselected_label_color"      	:"white",
-  "file_tab_unselected_light_label_color"	:"hsl(0,0%,20%)",
   "file_tab_selected_label_color"        	:"white",
-  "file_tab_selected_light_label_color"  	:"hsl(0,0%,20%)",
+  "file_tab_unselected_light_label_color"	:"hsl(0,0%,0%)",
+  "file_tab_selected_light_label_color"  	:"hsl(0,0%,0%)",
 
   "file_tab_close_opacity"               	: 0.5,
   "file_tab_close_hover_opacity"         	: 0.9,
