@@ -426,10 +426,7 @@
     "layer1.opacity": { "target":0.7,"speed":5.0,"interpolation":"smoothstep" },},
   // Tabs - modified highlight
   {"class":"tab_control","attributes":["dirty"],
-    "settings": {
-      "file_tab_style":["","square"],
-      "highlight_modified_tabs": true
-    },
+    "settings": {"file_tab_style":["","square"],"highlight_modified_tabs":true},
     "layer2.opacity":0.8},
   {"class":"tab_control","attributes":["dirty","selected"],
     "settings":["highlight_modified_tabs"],
@@ -476,9 +473,7 @@
     "layer3.opacity": { "target":0.3,"speed":5.0,"interpolation":"smoothstep" },},
   // Tabs - border
   // Tabs - label
-  {
-    "class":"tab_label",
-    "font.face":"var(font_face)",
+  {"class":"tab_label","font.face":"var(font_face)",
     "font.size":"var(font_size_sm)",},
   {"class":"tab_label","attributes":["transient"],
     "font.italic": true},
@@ -701,9 +696,7 @@
     "layer0.tint":"white",
     "layer0.opacity":0.35},
   {"class":"quick_panel_entry","spacing":1},
-  {
-    "class":"quick_panel_label",
-    "font.face":"var(font_face)",
+  {"class":"quick_panel_label","font.face":"var(font_face)",
     "font.size":"var(font_size_lg)",
     "fg":"color(var(--background) blend(white 40%))",
     "match_fg":"color(var(--background) blend(white 20%))",
@@ -714,9 +707,7 @@
     "match_fg":"color(var(--background) blend(black 20%))",
     "selected_fg":"color(var(--background) blend(black 20%))",
     "selected_match_fg":"black"},
-  {
-    "class":"quick_panel_path_label",
-    "font.size":"var(font_size_sm)",
+  {"class":"quick_panel_path_label","font.size":"var(font_size_sm)",
     "fg":"color(var(--background) blend(white 60%))",
     "match_fg":"color(var(--background) blend(white 40%))",
     "selected_fg":"color(var(--background) blend(white 50%))",
@@ -727,18 +718,14 @@
     "match_fg":"color(var(--background) blend(black 40%))",
     "selected_fg":"color(var(--background) blend(black 50%))",
     "selected_match_fg":"color(var(--background) blend(black 20%))"},
-  {
-    "class":"quick_panel_label hint",
-    "font.size":"var(font_size_sm)",
+  {"class":"quick_panel_label hint","font.size":"var(font_size_sm)",
     "font.italic": true,
     "fg":"color(var(--background) blend(white 40%) a(0.8))",
     "selected_fg":"color(var(--background) blend(white 20%) a(0.8))",},
   {"class":"quick_panel_label hint","parents":[{"class":"window","attributes":["file_light"]}],
     "fg":"color(var(--background) blend(black 40%) a(0.8))",
     "selected_fg":"color(var(--background) blend(black 20%) a(0.8))",},
-  {
-    "class":"quick_panel_label key_binding",
-    "font.size":"var(font_size_sm)",},
+  {"class":"quick_panel_label key_binding","font.size":"var(font_size_sm)",},
 
   // Views
   {"class":"grid_layout_control","border_color":"var(--background)",
@@ -856,9 +843,7 @@
       {"class":"table_row","attributes":["selected"]},
     ],
     "layer1.tint":"black",},
-  {
-    "class":"kind_label",
-    "font.face":"var(font_face)",
+  {"class":"kind_label","font.face":"var(font_face)",
     "font.size":"1.1rem",
     "font.bold": true,
     "font.italic": true,
@@ -1000,9 +985,7 @@
   {"class":"auto_complete_detail_pane","attributes":["file_light"],
     "tint_modifier":"var(auto_complete_detail_pane_light_tint)",},
   {"class":"auto_complete_info","spacing":8,},
-  {
-    "class":"auto_complete_kind_name_label",
-    "font.size":"0.9rem",
+  {"class":"auto_complete_kind_name_label","font.size":"0.9rem",
     "font.italic": true,
     "border_color":"var(kind_name_label_border_color)"},
   {"class":"auto_complete_details","monospace_background_color":"var(auto_complete_detail_panel_mono_dark_bg)"},
@@ -1427,9 +1410,7 @@
     "layer0.tint":"var(tool_tip_bg)",
     "layer0.opacity":1.0,
     "content_margin":[8, 3, 8, 3]},
-  {
-    "class":"tool_tip_label_control",
-    "font.face":"var(font_face)",
+  {"class":"tool_tip_label_control","font.face":"var(font_face)",
     "font.size":"var(font_size_sm)",
     "fg":"var(tool_tip_fg)"},
 
@@ -1491,9 +1472,7 @@
     "content_margin":[6, 11]},
   {"class":"vcs_branch_icon","parents":[{"class":"window","attributes":["file_light"]}, {"class":"status_bar"}],
     "layer0.tint":"color(var(--background) blend(black 50%))",},
-  {
-    "class":"vcs_changes_annotation",
-    "font.face":"var(font_face)",
+  {"class":"vcs_changes_annotation","font.face":"var(font_face)",
     "font.size":9,
     "color":"color(var(--background) blend(white 40%))",
     "border_color":"color(var(--background) blend(white 70%))",
