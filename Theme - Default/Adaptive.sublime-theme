@@ -15,11 +15,11 @@
 
   "link_fg"	:"hsl(215,60%,50%)",
 
-  "vcs_modified"	:"color(var(--bluish  ) min-contrast(var(--background) 2.5))",
-  "vcs_missing" 	:"color(var(--redish  ) min-contrast(var(--background) 2.5))",
-  "vcs_staged"  	:"color(var(--bluish  ) min-contrast(var(--background) 2.5))",
+  "vcs_modified"	:"color(var(--bluish)   min-contrast(var(--background) 2.5))",
+  "vcs_missing" 	:"color(var(--redish)   min-contrast(var(--background) 2.5))",
+  "vcs_staged"  	:"color(var(--bluish)   min-contrast(var(--background) 2.5))",
   "vcs_added"   	:"color(var(--greenish) min-contrast(var(--background) 2.5))",
-  "vcs_deleted" 	:"color(var(--redish  ) min-contrast(var(--background) 2.5))",
+  "vcs_deleted" 	:"color(var(--redish)   min-contrast(var(--background) 2.5))",
   "vcs_unmerged"	:"color(var(--orangish) min-contrast(var(--background) 2.5))",
 
   "adaptive_dividers"	:"hsl(0,0%,38%)",
@@ -364,7 +364,7 @@
   {"class":"tab_control","attributes":["dirty","!selected"	],"settings":{"highlight_modified_tabs":true},
     "layer2.texture":"Theme - Default/common/tab_square_highlight.png",},
   {"class":"tab_control","attributes":["added"   ],"layer2.tint":"var(--greenish)",},
-  {"class":"tab_control","attributes":["deleted" ],"layer2.tint":"var(--redish  )",},
+  {"class":"tab_control","attributes":["deleted" ],"layer2.tint":"var(--redish)",},
   {"class":"tab_control","attributes":["modified"],"layer2.tint":"orange"         ,},
 // Tabs - dividers
   {"class":"tab_control","parents":[{"class":"edit_window","attributes":["file_light"]}],
