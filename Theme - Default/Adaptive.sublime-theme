@@ -210,14 +210,6 @@
     "layer0.tint":"var(vcs_deleted)",},
 
 // Folder & File Icons
-  {"class":"disclosure_button_control","layer0.texture":"Theme - Default/common/disclosure_unexpanded.png",
-    "layer0.tint":"white","layer0.opacity":0.3,
-    "content_margin":[8,8]},
-  {"class":"disclosure_button_control","parents":[{"class":"window","attributes":["file_light"]}],
-    "layer0.tint":"black",},
-  {"class":"disclosure_button_control","parents":[{"class":"tree_row","attributes":["expanded"]}],
-    "layer0.texture":"Theme - Default/common/disclosure_expanded.png",},
-  {"class":"disclosure_button_control","attributes":["hover"],"layer0.opacity":0.5,},
   {"class":"icon_folder","layer0.texture":"Theme - Default/common/folder_closed.png",
     "layer0.tint":"white",
     "layer0.opacity":0.3,
