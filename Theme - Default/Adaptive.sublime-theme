@@ -142,11 +142,11 @@
     "layer0.tint":"var(medium_bg)",},
   {"class":"sidebar_container","parents":[{"class":"window","attributes":["file_light"]}],
     "layer0.tint":"var(light_bg)",},
-  {"class":"sidebar_tree","row_padding":[1,1,0,1],
+  {"class":"sidebar_tree","row_padding":[12,1,0,1],
     "indent_top_level":false,"indent_offset":0,"indent":2,
     "dark_content":true, // if bg is dark – set dark attribute for scrollbars
     "spacer_rows": true}, // blank row between the Open Files and Folders sections of the sidebar when both are visible
-  {"class":"sidebar_tree","platforms":["windows"],"row_padding":[1,1,0,1],},
+  {"class":"sidebar_tree","platforms":["windows"],"row_padding":[12,1,0,1],},
   {"class":"sidebar_tree","parents":[{"class":"window","attributes":["file_light"]}],
     "dark_content": false,},
   {"class":"tree_row","attributes":["!hover"],
