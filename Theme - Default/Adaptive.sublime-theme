@@ -426,10 +426,8 @@
 // Tabs - border
 // Tabs - label
   {"class":"tab_label","font.face":"var(font_face_tab)","font.size":"var(font_size_tab)",},
-  {"class":"tab_label","attributes":["transient"],
-    "font.italic": true},
-  {"class":"tab_label","fg":"var(file_tab_selected_label_color)",
-    "opacity":1.0},
+  {"class":"tab_label","attributes":["transient"],"font.italic": true},
+  {"class":"tab_label","fg":"var(file_tab_selected_label_color)","opacity":1.0},
   {"class":"tab_label","parents":[{"class":"tab_control","attributes":["file_light"]}],
     "fg":"var(file_tab_selected_light_label_color)"},
   {"class":"tab_label","parents":[{"class":"tab_control","attributes":["!selected"]}],
