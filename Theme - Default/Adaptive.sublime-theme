@@ -216,14 +216,13 @@
   {"class":"disclosure_button_control","parents":[{"class":"tree_row","attributes":["expanded"]}],
     "layer0.texture":"Theme - Default/common/disclosure_expanded.png",},
   {"class":"disclosure_button_control","attributes":["hover"],"layer0.opacity":0.5,},
-  {"class":"icon_folder","layer0.texture":"Theme - Default/common/folder_closed.png",
+  {"class":"icon_folder",
     "layer0.tint":"white","layer0.opacity":0.3,
-    "content_margin":[9,8]},
+    "layer0.texture":"User/Themes/icon/folder_closed.png","content_margin":[7,6]},
   {"class":"icon_folder","parents":[{"class":"window","attributes":["file_light"]}],
     "layer0.tint":"black","layer0.opacity":0.25,},
   {"class":"icon_folder","parents":[{"class":"tree_row","attributes":["expanded"]}],
-    "layer0.texture":"Theme - Default/common/folder_open.png",
-    "content_margin":[9,8]},
+    "layer0.texture":"User/Themes/icon/folder_open.png","content_margin":[7,6]},
   {"class":"icon_folder_loading","layer0.texture":
     {
       "keyframes":
