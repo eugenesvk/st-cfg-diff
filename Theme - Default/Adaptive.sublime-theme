@@ -875,9 +875,9 @@
     "content_margin":[12,0]},
 // Scroll Bars (Sidebar)
   {"class":"scroll_bar_control","parents":[{"class":"sidebar_container"}],
-    "layer0.opacity":0.0,},
+    "layer0.tint":"transparent","layer0.opacity":0.0,},
   {"class":"scroll_corner_control","parents":[{"class":"sidebar_container"}],
-    "layer0.opacity":0.0,},
+    "layer0.tint":"transparent","layer0.opacity":0.0,},
 // Scroll Bars (Switch Project)
   {"class":"scroll_bar_control","parents":[{"class":"switch_project_window"}],
     "tint_index": -1},
