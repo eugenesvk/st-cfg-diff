@@ -201,13 +201,11 @@
     "content_margin":[8,8],},
   {"class":"close_button","parents":[{"class":"window","attributes":["file_light"]}],
     "layer0.tint":"color(black a(50%))"},
-  {"class":"close_button","attributes":["hover"],"layer0.opacity":1,},
+  {"class":"close_button","attributes":[ "hover"],"layer0.opacity":1,},
   {"class":"close_button","attributes":["!hover","dirty"],
     "layer0.texture":"Theme - Default/common/open_file_dirty.png",},
-  {"class":"close_button","attributes":["added"],
-    "layer0.tint":"var(vcs_added)",},
-  {"class":"close_button","attributes":["deleted"],
-    "layer0.tint":"var(vcs_deleted)",},
+  {"class":"close_button","attributes":["added"  ],"layer0.tint":"var(vcs_added)"  ,},
+  {"class":"close_button","attributes":["deleted"],"layer0.tint":"var(vcs_deleted)",},
 
 // Folder & File Icons
   {"class":"icon_folder","layer0.texture":"Theme - Default/common/folder_closed.png",
