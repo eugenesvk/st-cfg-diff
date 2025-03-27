@@ -354,9 +354,7 @@
     "layer0.tint":"var(tabset_medium_bg)"},
   {"class":"tabset_control","parents":[{"class":"edit_window","attributes":["file_light"]}],
     "layer0.tint":"var(tabset_light_bg)"},
-  {"class":"tab_connector","layer0.texture":"",
-    "layer0.opacity":1.0,
-    "tint_index":0,},
+  {"class":"tab_connector","layer0.texture":"","layer0.opacity":1.0,"tint_index":0,},
 // Tabs
   {"class":"tab_control","settings":{"file_tab_style":"square"},
     "layer0.opacity":1.0,
