@@ -15,7 +15,9 @@
   "medium_bg"     	:"color(var(--background) blend(black 80%))",
   "light_bg"      	:"color(var(--background) blend(black 90%))",
 
-  "link_fg"	:"hsl(215,60%,50%)",
+  "link_fg"    	:"hsl(215,60%,50%)",
+  "match_fg"   	:"hsl(120,90%,30%)", //dark green
+  "selected_fg"	:"hsl(245,90%, 0%)", //dark blue
 
   "vcs_modified"	:"color(var(--bluish)   min-contrast(var(--background) 2.5))",
   "vcs_missing" 	:"color(var(--redish)   min-contrast(var(--background) 2.5))",
@@ -518,8 +520,8 @@
     "selected_match_fg":"white"},
   {"class":"quick_panel_label","parents":[{"class":"window","attributes":["file_light"]}],
     "fg"               :"color(var(--background) blend(black  0%))",
-    "match_fg"         :"hsl(120,90%,30%)", //dark green
-    "selected_fg"      :"hsl(245,90%, 0%)", //dark blue
+    "match_fg"         :"var(match_fg)",
+    "selected_fg"      :"var(selected_fg)",
     "selected_match_fg":"black"},
   {"class":"quick_panel_path_label","font.size":"var(font_size_sm)",
     "fg"               :"color(var(--background) blend(white 60%))",
