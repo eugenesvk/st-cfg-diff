@@ -536,10 +536,10 @@
     "selected_match_fg":"color(var(--background) blend(black  0%))"},
   {"class":"quick_panel_label hint","font.size":"var(font_size_sm)",
     "font.italic": true,
-    "fg":"color(var(--background) blend(white 40%) a(0.8))",
+    "fg"         :"color(var(--background) blend(white 40%) a(0.8))",
     "selected_fg":"color(var(--background) blend(white 20%) a(0.8))",},
   {"class":"quick_panel_label hint","parents":[{"class":"window","attributes":["file_light"]}],
-    "fg":"color(var(--background) blend(black 40%) a(0.8))",
+    "fg"         :"color(var(--background) blend(black 40%) a(0.8))",
     "selected_fg":"color(var(--background) blend(black 20%) a(0.8))",},
   {"class":"quick_panel_label key_binding","font.size":"var(font_size_sm)",},
 
