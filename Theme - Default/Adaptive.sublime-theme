@@ -1089,6 +1089,12 @@
     "layer0.tint":["accent",1.0],
     "layer0.opacity":1.0,},
 
+// Panel buttons
+  {"class":"button_control","parents":[{"class":"find_panel"}],
+    "content_margin":[0,0,0,0],"min_size":[10,2],},
+  {"class":"button_control","parents":[{"class":"replace_panel"}],
+    "content_margin":[0,0,0,0],"min_size":[10,2],},
+
 // Labels
   {"class":"label_control","fg":"color(var(--background) blend(white 10%))",
     "font.face":"var(font_face)",
