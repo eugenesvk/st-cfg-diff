@@ -786,8 +786,8 @@
     "attributes":["!panel_visible"],
     "settings":["adaptive_dividers"],
     "layer1.tint":"var(adaptive_dividers)",},
-  {"class":"find_panel"   ,"parents":[{"class":"window"}],"content_margin":[0,-3,-7,-3]},
-  {"class":"replace_panel","parents":[{"class":"window"}],"content_margin":[0,-3,-7,-3]},
+  {"class":"panel_control find_panel"   ,"parents":[{"class":"window"}],"content_margin":[0,-3,-7,-3]},
+  {"class":"panel_control replace_panel","parents":[{"class":"window"}],"content_margin":[0,-3,-7,-3]},
 
   {"class":"status_bar","parents":[{"class":"window","attributes":["file_light"]}],
     "settings":["adaptive_dividers"],
