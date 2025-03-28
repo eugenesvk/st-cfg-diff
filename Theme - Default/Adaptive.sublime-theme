@@ -870,6 +870,12 @@
     "layer0.tint":"white",},
   {"class":"scroll_corner_control","layer0.opacity":1.0,
     "tint_index":0},
+  {"class":"puck_control","attributes":["!horizontal","!hover"],
+    "layer0.inner_margin":[0,7,8,7], //2
+    "content_margin":[6,12,6,12]},
+  {"class":"puck_control","attributes":["!horizontal", "hover"],
+    "layer0.inner_margin":[2,2,2,2],
+    "content_margin":[6,12,6,12]},//[0,12]
 // Scroll Bars (Horizontal)
   {"class":"scroll_track_control","attributes":["horizontal"],
     "layer0.texture":"Theme - Default/common/scroll_horiz.png",
@@ -879,6 +885,12 @@
     "layer0.texture":"Theme - Default/common/scroll_horiz.png",
     "layer0.inner_margin":[7,4,7,4],
     "content_margin":[12,0]},
+  {"class":"puck_control","attributes":[ "horizontal","!hover"],
+    "layer0.inner_margin":[7,0,7,8],
+    "content_margin":[12,5,12,5]},//[12,0]
+  {"class":"puck_control","attributes":[ "horizontal", "hover"],
+    "layer0.inner_margin":[2,2,2,2],
+    "content_margin":[12,4,12,4]},//[12,0]
 // Scroll Bars (Sidebar)
   {"class":"scroll_bar_control","parents":[{"class":"sidebar_container"}],
     "layer0.tint":"transparent","layer0.opacity":0.0,},
