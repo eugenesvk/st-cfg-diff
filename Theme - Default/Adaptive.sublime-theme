@@ -1093,7 +1093,7 @@
   {"class":"button_control","parents":[{"class":"find_panel"}],
     "content_margin":[0,0,0,0],"min_size":[10,2],},
   {"class":"button_control","parents":[{"class":"replace_panel"}],
-    "content_margin":[0,0,0,0],"min_size":[10,2],},
+    "content_margin":[0,0,0,0],"min_size":[50,2],},
 
 // Labels
   {"class":"label_control","fg":"color(var(--background) blend(white 10%))",
