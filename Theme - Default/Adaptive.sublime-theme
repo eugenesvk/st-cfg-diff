@@ -861,7 +861,7 @@
   {"class":"puck_control","layer0.texture":"Theme - Default/common/scroll.png",
     "layer0.tint":"black","layer0.opacity":0.2,
     "layer0.inner_margin":2,
-    "content_margin":[0,12]},
+    "content_margin":[4,16,4,16]},//[0,12]
   {"class":"puck_control","parents":[
       {"class":"scroll_bar_control","attributes":["hover"]},
       {"class":"scroll_track_control"},],
@@ -871,11 +871,9 @@
   {"class":"scroll_corner_control","layer0.opacity":1.0,
     "tint_index":0},
   {"class":"puck_control","attributes":["!horizontal","!hover"],
-    "layer0.inner_margin":[0,7,8,7], //2
-    "content_margin":[6,12,6,12]},
+    "layer0.inner_margin":[0,7,8,7],}, //right corners only
   {"class":"puck_control","attributes":["!horizontal", "hover"],
-    "layer0.inner_margin":[2,2,2,2],
-    "content_margin":[6,12,6,12]},//[0,12]
+    "layer0.inner_margin":[2,2,2,2]},
 // Scroll Bars (Horizontal)
   {"class":"scroll_track_control","attributes":["horizontal"],
     "layer0.texture":"Theme - Default/common/scroll_horiz.png",
