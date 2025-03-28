@@ -1037,7 +1037,7 @@
     "layer0.opacity":1.0,},
   {"class":"icon_highlight","layer0.texture":"User/Themes/icon/highlight_matches.png",
     "layer0.tint":"var(icon_tint)","layer0.opacity":"var(icon_opacity)", //707a8c
-    "content_margin": [7,7]},
+    "content_margin":[7,7]},
   {"class":"icon_highlight","parents":[{"class":"window","attributes":["file_light"]}],
     "layer0.tint":"var(icon_light_tint)",},
   {"class":"icon_highlight","attributes":["hover"],
