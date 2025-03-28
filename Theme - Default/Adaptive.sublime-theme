@@ -883,14 +883,9 @@
     "content_margin":[0,8,0,8]},
   {"class":"puck_control","attributes":["horizontal"],
     "layer0.texture":"Theme - Default/common/scroll_horiz.png",
-    "layer0.inner_margin":[7,4,7,4],
     "content_margin":[12,0]},
   {"class":"puck_control","attributes":[ "horizontal","!hover"],
-    "layer0.inner_margin":[7,0,7,8],
-    "content_margin":[12,5,12,5]},//[12,0]
-  {"class":"puck_control","attributes":[ "horizontal", "hover"],
-    "layer0.inner_margin":[2,2,2,2],
-    "content_margin":[12,4,12,4]},//[12,0]
+    "layer0.inner_margin":[7,0,7,8]}, //bottom only  [7,4,7,4] + top corners
 // Scroll Bars (Sidebar)
   {"class":"scroll_bar_control","parents":[{"class":"sidebar_container"}],
     "layer0.tint":"transparent","layer0.opacity":0.0,},
